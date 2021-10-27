@@ -1,0 +1,11 @@
+debug: true
+logging:
+  level:
+    root: debug
+spring:
+  datasource:
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    show-sql: true
+    format-sql: true

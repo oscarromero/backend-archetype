@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<databaseChangeLog   
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"   
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">   
+  
+  <changeSet author="the-architect" id="0">
+    <sql>
+      CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+      CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+    </sql>
+  </changeSet>
+  <!-- Follow the approach below. -->
+  <!-- use predefined sql-scripts to setup db on releases or when the springboot starts. -->
+  <!-- changeSet  author="authorName"  id="20210619-PULL-REQUEST-1">  
+    <preConditions>
+        <not>
+            <tableExists tableName="" />
+        </not>
+    </preConditions>
+    <createTable  tableName="">
+      <column  name="COLUMN1"  type="BIGINT" autoIncrement="true">
+        <constraints  nullable="true"  primaryKey="false"  unique="false" primaryKeyName=""/>  
+      </column>  
+    </createTable> 
+    <sql>
+        /* PREDEFINED DATA SCRIPTS (INSERTS, UPDATES, ETC) */
+    </sql>
+    <rollback>
+        <dropTable tableName="" />
+    </rollback>
+  </changeSet -->  
+</databaseChangeLog>

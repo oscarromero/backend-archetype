@@ -1,0 +1,12 @@
+${AnsiColor.BLUE}______         _                  ______              
+${AnsiColor.BLUE}| ___ \       (_)                 |  _  \             
+${AnsiColor.BLUE}| |_/ /  __ _  _  _ __   ___  ___ | | | |  ___ __   __
+${AnsiColor.BLUE}| ___ \ / _` || || '__| / _ \/ __|| | | | / _ \\ \ / /
+${AnsiColor.BLUE}| |_/ /| (_| || || |   |  __/\__ \| |/ / |  __/ \ V / 
+${AnsiColor.BLUE}\____/  \__,_||_||_|    \___||___/|___/   \___|  \_/  
+${AnsiColor.DEFAULT}
+
+${AnsiColor.BRIGHT_BLUE}${artifactId} ${version}
+${AnsiColor.YELLOW}Powered by TheBlackCats - TEAM #13
+${AnsiColor.GREEN}Build with ${spring-boot.version}
+${AnsiColor.DEFAULT}
